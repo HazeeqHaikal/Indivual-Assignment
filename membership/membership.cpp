@@ -18,8 +18,9 @@ int main() {
 
     cupSize = toupper(cupSize);
 
-    cout << "Enter the special code: ";
+    cout << "Are you buying on Thursday, enter T if yes: ";
     cin >> specialCode;
+
     specialCode = toupper(specialCode);
 
     if (cupSize == 'M' && membership == 'Y') {

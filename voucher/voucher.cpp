@@ -7,8 +7,7 @@ int main() {
     string customerID;
     float averagePurchase;
     int voucher;
-    char rated;
-    char preffered;
+    char rated, preffered;
 
     cout << "Enter customer ID: ";
     cin >> customerID;
@@ -19,7 +18,6 @@ int main() {
     cout << "Succesfully rated a product? Yes(Y) or No(N): ";
     cin >> rated;
     rated = toupper(rated);
-    // if rated variable not equal to y or n return
 
     if (rated != 'Y' && rated != 'N') {
         cout << "Invalid input. Please enter Y or N." << endl;

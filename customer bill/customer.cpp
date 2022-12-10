@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     char customerType;
-    float rateType, billAmount, billFee, serviceFee, premiumChannel;
+    float billAmount, billFee, serviceFee, premiumChannel;
     string accountNumber;
     float firstTen, extra;
 
