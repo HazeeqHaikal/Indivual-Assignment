@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     char customerType;
-    float billAmount, billFee, serviceFee, premiumChannel;
+    float billAmount, billFee, serviceFee, premiumChannel, basicService;
     string accountNumber;
     float firstTen, extra;
 
@@ -16,21 +16,22 @@ int main() {
     cin >> customerType;
     customerType = toupper(customerType);
 
+    cout << "Enter the amount of your premium channels: ";
+    cin >> premiumChannel;
+
     if (customerType == 'R') {
-        cout << "Enter the amount of your premium channels: ";
-        cin >> premiumChannel;
         billFee = 4.5;
         serviceFee = 20.5;
         premiumChannel *= 7.5;
     } else if (customerType == 'B') {
         cout << "Enter the number of basic service connections: ";
-        cin >> premiumChannel;
+        cin >> basicService;
         billFee = 15.0;
-        if (premiumChannel <= 10) {
-            serviceFee = 7.5 * premiumChannel;
+        if (basicService <= 10) {
+            serviceFee = 7.5 * basicService;
         } else {
             firstTen = 7.5 * 10;
-            extra = premiumChannel - 10;
+            extra = basicService - 10;
             serviceFee = firstTen + (extra * 5.0);
         }
         premiumChannel *= 50.0;
