@@ -43,7 +43,7 @@ int main() {
 
     cout << "\nCustomer ID: " << customerID << endl;
     cout << "Average weekly purchase: RM" << averagePurchase << endl;
-    cout << "Voucher: RM" << voucher << endl;
+    cout << "Voucher: " << voucher << endl;
 
     return 0;
 }

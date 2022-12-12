@@ -12,7 +12,6 @@ int main() {
     cin >> yearStart;
 
     int yearService = 2022 - yearStart;
-    cout << endl
-         << employeeName << ", you have been working here for " << yearService << " years." << endl;
+    cout << endl << employeeName << ", you have been working here for " << yearService << " years." << endl;
     cout << "Thank you for your service." << endl;
 }
