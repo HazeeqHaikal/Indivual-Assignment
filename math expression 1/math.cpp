@@ -21,7 +21,7 @@ int main() {
     cout << "Enter t2 value: ";
     cin >> t2;
 
-    float q = 1.0 * ((k * A) * (t1 - t2)) / L;
+    float q = ((k * A) * (t1 - t2)) / L;
     cout << "q: " << q << endl;
     return 0;
 }

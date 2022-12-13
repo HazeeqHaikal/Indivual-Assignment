@@ -10,9 +10,9 @@ int main() {
     cout << "Enter a year: ";
     cin >> year;
 
-    float population = 3.2 * (1 + (exp(0.01 * (year - 2000))));
+    float Population = 3.2 * (1 + (exp(0.01 * (year - 2000))));
 
-    cout << "Population: " << population << endl;
+    cout << "Population: " << Population << endl;
 
     return 0;
 }

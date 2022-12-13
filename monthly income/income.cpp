@@ -47,8 +47,10 @@ int main() {
             commision = 0;
     }
 
+    monthlySalary += (monthlySalary * commision);
+
     if (commision != 0) {
-        cout << fixed << setprecision(2) << "\nMonthly income for " << name << " is RM" << monthlySalary + (monthlySalary * (float)commision) << endl;
+        cout << fixed << setprecision(2) << "\nMonthly income for " << name << " is RM" << monthlySalary << endl;
     }
     return 0;
 }

@@ -15,12 +15,10 @@ int main() {
 
     cout << "What are your desired cup size? Medium(M) or Large(L): ";
     cin >> cupSize;
-
     cupSize = toupper(cupSize);
-
-    cout << "Are you buying on Thursday, enter T if yes: ";
+    
+    cout << "Are you buying on Tuesday, enter T if yes, enter N if no: ";
     cin >> specialCode;
-
     specialCode = toupper(specialCode);
 
     if (cupSize == 'M' && membership == 'Y') {
@@ -35,10 +33,11 @@ int main() {
         cout << "Invalid cup size." << endl;
     }
 
+
     if (specialCode == 'T') {
         price = price - (price * 0.10);
     }
-    if (price != 0.00) {
+    if (price != 0.00 ) {
         cout << fixed << setprecision(2) << "Price: RM" << price << endl;
     }
 

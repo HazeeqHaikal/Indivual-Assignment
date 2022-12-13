@@ -17,7 +17,7 @@ int main() {
     cout << "Enter S value: ";
     cin >> S;
 
-    float M = (((4.0 * P) / (Q + R)) - (2 * S * 3));
+    float M = (((4 * P) / (Q + R)) - (2 * S * 3));
     cout << "M: " << M << endl;
 
     return 0;
